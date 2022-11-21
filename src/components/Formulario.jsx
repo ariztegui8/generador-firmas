@@ -37,18 +37,6 @@ const Formulario = ({setMostrarFirm, setDatosFirma, setError, error}) => {
         
 
         setDatosFirma(formulario)
-
-        // if(){
-        //     console.log('Firm correcto');
-        //     setMostrarFirm(true)
-            
-        
-        // } else{
-        //     console.log('Firm incorrecto');
-        //     setMostrarFirm(false)
-        // }
-
-        // setDatosFirma(formulario)
         
     }
 

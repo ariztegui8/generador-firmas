@@ -25,24 +25,18 @@ const Login = ({setMostrarForm, setError, error}) => {
 
         if(Object.values(login).includes('')) {
             setError('Todos los campos son obligatorios')
+        } else{
+            const pass = password
+            if(pass === '123'){
+                setMostrarForm(true)
+            }
+            
         }
 
         setTimeout(()=>{
             setError('')
         },3000)
 
-        if(password === '123'){
-            setMostrarForm(true)
-        }
-
-        // if(password.trim() === '' || email.trim() === ''){
-        //     setMostrarForm(false)
-        //     console.log('completa todos los campos');
-        // } else{
-            
-        //     setMostrarForm(true)
-        //     console.log('Login correcto');
-        // }
     }
 
   return (
