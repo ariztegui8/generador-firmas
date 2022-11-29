@@ -19,14 +19,17 @@ const Login = ({setMostrarForm, setError, error}) => {
         })
     }
 
+    const pass = password
+
     const handleSubmitLogin = e =>{
         e.preventDefault()
 
 
         if(Object.values(login).includes('')) {
             setError('Todos los campos son obligatorios')
-        } else{
-            const pass = password
+        } else if(pass !== '123'){
+            setError('Password incorrecto')
+        }else{
             if(pass === '123'){
                 setMostrarForm(true)
             }
@@ -40,7 +43,7 @@ const Login = ({setMostrarForm, setError, error}) => {
     }
 
   return (
-    <div>
+    <div className='container-login'>
         <h3 className='title-login'>Login</h3>
 
         <form className='login' onSubmit={handleSubmitLogin}>
@@ -51,6 +54,7 @@ const Login = ({setMostrarForm, setError, error}) => {
                 value={email}
                 name='email'
                 size="small"
+                required
             />
 
              <TextField
@@ -60,6 +64,7 @@ const Login = ({setMostrarForm, setError, error}) => {
                 value={password}
                 name='password'
                 size="small"
+                required
             />
 
             {error && <Error error={error} />}

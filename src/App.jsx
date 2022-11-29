@@ -16,33 +16,31 @@ const App = () => {
 
   return (
     <>
-
-      {mostrarForm ? 
-        <>
-          {mostrarFirm ? 
-            <Firma
-              datosFirma={datosFirma}
-            />
-            : 
-            <Formulario
-              setMostrarForm={setMostrarForm}
-              setMostrarFirm={setMostrarFirm}
-              setDatosFirma={setDatosFirma}
-              setError={setError}
-              error={error}
-            />
-          }
-        </>
-        :
-        <Login
-          setMostrarForm={setMostrarForm}
-          setError={setError}
-          error={error}
-        />
-      }
-
-      
-      
+      <div className="container">
+        {mostrarForm ? 
+          <>
+            {mostrarFirm ? 
+              <Firma
+                datosFirma={datosFirma}
+              />
+              : 
+              <Formulario
+                setMostrarForm={setMostrarForm}
+                setMostrarFirm={setMostrarFirm}
+                setDatosFirma={setDatosFirma}
+                setError={setError}
+                error={error}
+              />
+            }
+          </>
+          :
+          <Login
+            setMostrarForm={setMostrarForm}
+            setError={setError}
+            error={error}
+          />
+        }
+      </div>
     </>
   )
 }

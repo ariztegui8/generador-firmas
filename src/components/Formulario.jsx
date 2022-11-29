@@ -41,7 +41,7 @@ const Formulario = ({setMostrarFirm, setDatosFirma, setError, error}) => {
     }
 
   return (
-    <div>
+    <div className="container-formulario">
         <h3 className="title-formulario">Formulario</h3>
 
         <form className="formulario" onSubmit={handleSubmitForm}>
@@ -52,6 +52,7 @@ const Formulario = ({setMostrarFirm, setDatosFirma, setError, error}) => {
                 value={nombre}
                 name='nombre'
                 size="small"
+                required
             />
 
             <TextField
@@ -61,6 +62,7 @@ const Formulario = ({setMostrarFirm, setDatosFirma, setError, error}) => {
                 value={email}
                 name='email'
                 size="small"
+                required
             />
 
             <TextField
@@ -70,6 +72,7 @@ const Formulario = ({setMostrarFirm, setDatosFirma, setError, error}) => {
                 value={cargo}
                 name='cargo'
                 size="small"
+                required
             />
 
             <TextField
@@ -79,6 +82,7 @@ const Formulario = ({setMostrarFirm, setDatosFirma, setError, error}) => {
                 value={tel}
                 name='tel'
                 size="small"
+                required
             />
 
             {error && <Error error={error} />}
