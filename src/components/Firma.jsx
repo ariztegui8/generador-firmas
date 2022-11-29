@@ -15,7 +15,7 @@ const Firma = ({datosFirma}) => {
                             <tbody>
                                 <tr>
                                     <td style={{padding: '10px 40px 0 0'}}>
-                                        <img style={{width: '180px'}} src="https://res.cloudinary.com/dq2kjqcxd/image/upload/v1668377748/logo_tyegnm.png" alt=""/>
+                                        <img width="180" src="https://res.cloudinary.com/dq2kjqcxd/image/upload/v1668377748/logo_tyegnm.png" alt=""/>
                                     </td>
                     
                                     <td style={{padding: '10px 60px 10px 40px', borderLeft: '2px solid #CACACA'}}>
@@ -33,13 +33,13 @@ const Firma = ({datosFirma}) => {
                                 <tr>
                                     <td style={{paddingRight: '5px'}}>
                                         <a href="https://www.linkedin.com/company/prosumia/mycompany/" target="_blank">
-                                            <img style={{width: '35px'}} src="https://res.cloudinary.com/dq2kjqcxd/image/upload/v1668377748/ico-linkedin_lncobi.png" alt=""/>
+                                            <img width='35' src="https://res.cloudinary.com/dq2kjqcxd/image/upload/v1668377748/ico-linkedin_lncobi.png" alt=""/>
                                         </a>
                                         
                                     </td>
                                     <td style={{paddingRight: '10px'}}>
                                         <a href="https://www.instagram.com/prosumia/" target="_blank">
-                                            <img style={{width: '35px'}} src="https://res.cloudinary.com/dq2kjqcxd/image/upload/v1668377748/ico-insta_xcm2m4.png" alt=""/>
+                                            <img width='35' src="https://res.cloudinary.com/dq2kjqcxd/image/upload/v1668377748/ico-insta_xcm2m4.png" alt=""/>
                                         </a>
                                     </td>
                                     <td>
@@ -48,12 +48,12 @@ const Firma = ({datosFirma}) => {
                 
                                     <td style={{paddingRight: '5px', textAlign: 'right', width: '100%'}}>
                                         <a href="https://www.certipedia.com/quality_marks/9000004019?locale=es" target="_blank">
-                                            <img style={{width: '45px'}} src="https://res.cloudinary.com/dq2kjqcxd/image/upload/v1668377748/logo-iso_ii8vyq.png" alt=""/>
+                                            <img width='45' src="https://res.cloudinary.com/dq2kjqcxd/image/upload/v1668377748/logo-iso_ii8vyq.png" alt=""/>
                                         </a>
                                     </td>
                                     <td style={{textAlign: 'right', width: '100%'}}>
                                         <a href="https://certificaciones.greatplacetowork.com.ar/prosumia" target="_blank">
-                                            <img style={{width: '45px'}} src="https://res.cloudinary.com/dq2kjqcxd/image/upload/v1668377748/logo-gptw_dov5rg.png" alt=""/>
+                                            <img width='45' src="https://res.cloudinary.com/dq2kjqcxd/image/upload/v1668377748/logo-gptw_dov5rg.png" alt=""/>
                                         </a>
                                     </td>
                                 </tr>
